@@ -1,0 +1,64 @@
+/* .error{
+    color :red;
+}
+
+p.error{
+    color: mediumaquamarine;
+}
+
+p.success{
+    color:crimson;
+}
+
+p.success.feedback{
+    border: 1px dashed blue;
+}
+
+#content{
+    background-color: bisque;
+    padding: 30px;
+} */
+
+div p{
+    color: purple;  /* this is an example of desendent selector*/
+}
+
+div p .error{
+    background-color: cadetblue;
+}
+
+
+a[href]{
+    color: plum;
+}
+
+a[href="https://www.google.com"]{
+    color: rgb(46, 1, 46);
+}
+
+a[href*="www.google"]{
+    color: rgb(8, 141, 68);  /*any href that has www.google in it */
+}
+
+a[href$=".com"]{
+    color: rgb(46, 1, 46);  /* ends with .com */
+}
+
+
+div{
+    color: lightblue;
+    border: 1px dotted green;
+    margin: 40px;
+    font-weight: bold;
+}
+
+div p{
+    border: inherit;
+    margin: inherit;
+    color: crimson;
+
+}
+
+p{
+    color: orange;
+}
